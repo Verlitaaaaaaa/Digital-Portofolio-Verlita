@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verlita's Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Candal&family=Cantora+One&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Cantora One', sans-serif;
+      background: linear-gradient(135deg, #0c0c2c, #0c0c2c);
+      color: white;
+    }
+
+    nav {
+      background: black;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #cfcfff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      background: #d1d1ff;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 30px;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+    .profile-img {
+      width: 300px;
+      height: 400px;
+      border-radius: 50% / 50%;
+      overflow: hidden;
+      border: 4px solid #3b5bfd;
+      flex-shrink: 0;
+      box-shadow: 0 0 20px rgba(59, 91, 253, 0.6);
+    }
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .content {
+      max-width: 600px;
+    }
+    .content h1 {
+      font-family: 'Marko One', serif;
+      font-size: 48px;
+      margin: 0 0 0px 0;
+      font-weight: 700;
+    }
+    .content h2 {
+      font-family: 'Marko One', serif;
+      color: #3b5bfd;
+      font-size: 36px;
+      margin: 5px 0 0 0;
+      font-weight: 600;
+    }
+    .content p:first-of-type {
+      font-family: 'Marko One', serif;
+      margin: 5px 0 20px 0;
+      font-size: 22px;
+    }
+    .content p:nth-of-type(2) {
+      font-family: 'Martel', serif;
+      margin: 60px auto 20px auto;
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .social {
+      margin-top: 10px;
+    }
+    .social a {
+      font-family: 'Marko One', serif;
+      color: #3b5bfd;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      margin: 3px 0;
+      font-size: 18px;
+    }
+    .social a i {
+      margin-right: 10px;
+      color: white;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Marko+One&family=Martel&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html"  class="active">Introduction</a>
+    <a href="about me.html">About Me</a>
+    <a href="skill.html">Skill</a>
+    <a href="sertificat.html">Sertifikat</a>
+  </nav>
+  <div class="container">
+    <div class="profile-img">
+      <img src="verlita.jpg" alt="Verlita Muchyiyana">
+    </div>
+    <div class="content">
+      <h1>Hello!!</h1>
+      <h2><span style="color: white;">I’m</span> Verlita Muchyiyana</h2>
+      <p>and i’m a web developer</p>
+      <p>I have attached my portfolio for your review</p>
+      <div class="social">
+        <a href="https://instagram.com/v.erlita_much" target="_blank"><i class="fab fa-instagram"></i>@v.erlita_much</a>
+        <a href="mailto:verlitamuchyianaa@gmail.com"><i class="fas fa-envelope"></i>verlitamuchyianaa@gmail.com</a>
+        <a href="https://www.youtube.com/results?search_query=Verlita+Muchyiyana" target="_blank"><i class="fab fa-youtube"></i>Verlita Muchyiyana</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

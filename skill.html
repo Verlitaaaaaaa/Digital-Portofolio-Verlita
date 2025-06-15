@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skill</title>
+  <link href="https://fonts.googleapis.com/css2?family=Candal&family=Cantora+One&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Candal&family=Cantora+One&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Cantora One', sans-serif;
+      background: linear-gradient(135deg, #0c0c2c, #0c0c2c);
+      color: white;
+    }
+
+    nav {
+      background: black;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #cfcfff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      background: #d1d1ff;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 20px;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .profile-pic {
+      border-radius: 50% / 50%;
+      border: 5px solid #3b5bfd;
+      box-shadow: 0 0 20px #00f;
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .skills {
+      max-width: 500px;
+    }
+
+    .skills h3 {
+      color: #bdbdff;
+      margin-bottom: 5px;
+      font-family: 'Candal', sans-serif;
+    }
+
+    .skills ul {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      font-family: 'Cantora One', sans-serif;
+    }
+
+    .skills li {
+      margin-left: 20px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Introduction</a>
+    <a href="about me.html">About Me</a>
+    <a href="skill.html" class="active">Skill</a>
+    <a href="sertificat.html">Sertifikat</a>
+  </nav>
+
+  <div class="container">
+    <img src="verlita.jpg" alt="Foto Verlita" class="profile-pic">
+    <div class="skills">
+      <h3>Debian</h3>
+      <ul>
+        <li>Mampu mengelola server Debian dasar</li>
+        <li>Pernah membuat website menggunakan Apache2 dan Wordpress</li>
+        <li>Memahami penggunaan SSH server dan DNS server</li>
+      </ul>
+
+      <h3>Pemrograman</h3>
+      <ul>
+        <li>Membuat website sederhana menggunakan HTML dan CSS</li>
+        <li>Mendesain tampilan web menggunakan Figma</li>
+      </ul>
+
+      <h3>Network</h3>
+      <ul>
+        <li>Crimping kabel</li>
+        <li>Splicing FO</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

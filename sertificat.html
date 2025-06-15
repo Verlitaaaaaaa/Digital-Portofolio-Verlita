@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sertifikat</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Candal&family=Cantora+One&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Cantora One', sans-serif;
+      background: linear-gradient(135deg, #0c0c2c, #0c0c2c);
+      color: white;
+    }
+
+    nav {
+      background: black;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #cfcfff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      background: #d1d1ff;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 40px;
+    }
+
+    .profile-pic {
+      border-radius: 50% / 50%;
+      border: 5px solid #3b5bfd;
+      box-shadow: 0 0 20px #00f;
+      width: 220px;
+      height: 290px;
+      object-fit: cover;
+    }
+
+    .certificates {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+    }
+
+    .certificates img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(255,255,255,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .certificates img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Introduction</a>
+    <a href="about me.html">About Me</a>
+    <a href="skill.html">Skill</a>
+    <a href="sertificat.html" class="active">Sertifikat</a>
+  </nav>
+
+  <div class="container">
+    <img src="verlita.jpg" alt="Foto Verlita" class="profile-pic">
+
+    <div class="certificates">
+      <img src="alwysngoding.verlita.jpg" alt="Sertifikat 1">
+      <img src="fortinet.verlita.jpg" alt="Sertifikat 2">
+      <img src="redhat.verlita.jpg" alt="Sertifikat 3">
+      <img src="linux.verlita.jpg" alt="Sertifikat 4">
+      <img src="network.verlita.jpg" alt="Sertifikat 5">
+      <img src="python.verlita.jpg" alt="Sertifikat 6">
+      <img src="simulasijaringan.verlita.jpg" alt="Sertifikat 7">
+      <img src="virtualmachin.verlita.jpg" alt="Sertifikat 8">
+    </div>
+  </div>
+
+</body>
+</html>

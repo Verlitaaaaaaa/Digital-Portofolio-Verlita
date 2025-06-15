@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marko+One&family=Martel&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Candal&family=Cantora+One&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Cantora One', sans-serif;
+      background: linear-gradient(135deg, #0c0c2c, #0c0c2c);
+      color: white;
+    }
+
+    nav {
+      background: black;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #cfcfff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      background: #d1d1ff;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 30px;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .profile-pic {
+      width: 300px;
+      height: 400px;
+      border-radius: 50% / 50%;
+      border: 4px solid #3b5bfd;
+      box-shadow: 0 0 20px rgba(59, 91, 253, 0.6);
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .text {
+      max-width: 600px;
+    }
+
+    .text h1 {
+      font-size: 40px;
+      font-family: 'Marko One', serif;
+      margin: 0 0 10px 0;
+    }
+
+    .text h1 span {
+      color: #66f;
+    }
+
+    .text p {
+      margin-top: 10px;
+      line-height: 1.6;
+      font-size: 18px;
+      font-family: 'Martel', serif;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Introduction</a>
+    <a href="about me.html" class="active">About Me</a>
+    <a href="skill.html">Skill</a>
+    <a href="sertificat.html">Sertifikat</a>
+  </nav>
+
+  <section class="container" id="about">
+    <img src="verlita.jpg" alt="Foto Verlita" class="profile-pic">
+    <div class="text">
+      <h1>Hello!!<br><span style="color: white">I’m</span> <span style="color:#66f">Verlita!!</span></h1>
+      <p id="aboutText">
+        Saya adalah siswi SMK Negeri 1 Nglegok jurusan Teknik Komputer dan Jaringan. Saat ini saya sedang memperdalam ilmu dan keterampilan di bidang komputer dan jaringan, sekaligus mencari pengalaman baru yang bisa mengasah kemampuan saya. Saya siap belajar, tumbuh, dan memberi kontribusi terbaik di lingkungan kerja yang aktif dan penuh tantangan.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    const texts = [
+      `Saya adalah siswi SMK Negeri 1 Nglegok jurusan Teknik Komputer dan Jaringan. Saat ini saya sedang memperdalam ilmu dan keterampilan di bidang komputer dan jaringan, sekaligus mencari pengalaman baru yang bisa mengasah kemampuan saya. Saya siap belajar, tumbuh, dan memberi kontribusi terbaik di lingkungan kerja yang aktif dan penuh tantangan.`,
+      `Name: Verlita Muchyiyana<br>
+      Place and Date of Birth: Blitar, 08 July 2008<br>
+      Address: Gadungan Village. Dermosari Hamlet. Gandusari District. Blitar Regency<br>
+      Gender: Woman<br>
+      Citizen: Indonesian<br>
+      Religion: Islam<br>
+      No: 0881-0363-97418<br>
+      Hoby: Reading`
+    ];
+
+    let index = 0;
+    setInterval(() => {
+      index = (index + 1) % texts.length;
+      document.getElementById('aboutText').innerHTML = texts[index];
+    }, 5000);
+
+    function goToSkill() {
+      location.href = "#skill";
+    }
+  </script>
+
+</body>
+</html>
